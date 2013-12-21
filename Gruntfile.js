@@ -3,11 +3,6 @@ module.exports = function (grunt) {
     'use strict';
 
     grunt.loadNpmTasks('grunt-jslint');
-    grunt.loadNpmTasks('grunt-bower');
-    grunt.loadNpmTasks('grunt-buster');
-    grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-karma');
 
     // Project configuration.
