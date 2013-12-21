@@ -88,6 +88,7 @@ module.exports = function (grunt) {
         }
     });
 
-    // Default task.
-    grunt.registerTask('default', ['jslint', 'karma']);
+    grunt.registerTask('gates', ['jslint', 'karma']);
+    grunt.registerTask('travis', ['gates']);
+    grunt.registerTask('default', 'gates');
 };
