@@ -2,7 +2,6 @@
     "name": "travi-framework",
     "version": "0.1.0",
     "devDependencies": {
-        "bower": "~0.8.0",
         "grunt": "~0.4.1",
         "grunt-jslint": "~1.0.0",
         "buster-jstestdriver": "~0.2.2",
