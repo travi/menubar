@@ -6,11 +6,11 @@ module.exports = function (config) {
             'bower_components/jquery/jquery.js',
             'bower_components/jquery-ui/ui/jquery-ui.js',
 
-            'client/js/plugins/jquery.menubar.js',
+            'js/jquery.menubar.js',
 
-            'test/js/resources/bootstrap.js',
+            'test/bootstrap.js',
 
-            'test/js/plugins/**/*.jstd'
+            'test/**/*.jstd'
         ],
 
         browsers: ['PhantomJS']

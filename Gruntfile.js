@@ -17,8 +17,7 @@ module.exports = function (grunt) {
         jslint: {
             dist: {
                 src: [
-                    'client/js/**/*.js',
-                    '!client/js/travi/framework/utilities.js'
+                    'js/**/*.js'
                 ],
                 directives: {
                     browser: true,
@@ -38,10 +37,7 @@ module.exports = function (grunt) {
             test: {
                 src: [
                     'grunt.js',
-                    'test/js/**/*.js',
-                    '!test/js/tools/*.js',
-                    '!test/js/stubs/*.js',
-                    '!test/js/resources/bootstrap.js'
+                    'test/**/*.jstd'
                 ],
                 directives: {
                     browser: true,
@@ -53,6 +49,7 @@ module.exports = function (grunt) {
                         'amplify',
                         'travi',
 
+			'testCase',
                         'sinon',
                         'assertEquals',
                         'assertSame',
@@ -74,33 +71,6 @@ module.exports = function (grunt) {
             }
         },
 
-        sass: {
-            dist: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'client/scss',
-                        src: ['**/*.scss'],
-                        dest: 'client/css/',
-                        ext: '.css'
-                    }
-                ]
-            }
-        },
-
-        copy: {
-            cssImages: {
-                files: [
-                    {
-                        expand: true,
-                        cwd: 'client/scss/icons',
-                        src: ['*'],
-                        dest: 'client/css/icons/'
-                    }
-                ]
-            }
-        },
-
         karma: {
             menuBar: {
                 configFile: 'karma.conf.js',
@@ -119,7 +89,5 @@ module.exports = function (grunt) {
     });
 
     // Default task.
-    grunt.registerTask('default', 'jslint');
-    grunt.registerTask('compile', ['sass', 'copy:cssImages']);
-
+    grunt.registerTask('default', ['jslint', 'karma']);
 };
