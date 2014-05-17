@@ -75,6 +75,5 @@ module.exports = function (grunt) {
     });
 
     grunt.registerTask('gates', ['jslint', 'karma']);
-    grunt.registerTask('travis', ['gates']);
     grunt.registerTask('default', 'gates');
 };
