@@ -4,5 +4,8 @@
   "dependencies": {
     "jquery": ">=1.8.x <2.0.0",
     "jquery-ui": "1.9.x"
+  },
+  "devDependencies": {
+    "travi-test-utils": "*"
   }
 }

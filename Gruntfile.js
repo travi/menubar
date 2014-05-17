@@ -44,19 +44,10 @@ module.exports = function (grunt) {
                         'amplify',
                         'travi',
 
-			'testCase',
+                        'testCase',
                         'sinon',
-                        'assertEquals',
-                        'assertSame',
-                        'assertNotSame',
-                        'assertString',
-                        'assertObject',
-                        'assertFunction',
                         'assert',
                         'refute',
-                        'assertFalse',
-                        'assertTrue',
-                        'expectAsserts'
                     ]
                 },
                 options: {
