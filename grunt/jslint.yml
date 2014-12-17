@@ -1,0 +1,35 @@
+dist:
+  src: js/**/*.js
+  directives:
+    browser: true
+    predef:
+      - $
+      - jQuery
+      - Modernizr
+      - amplify
+      - travi
+  options:
+    errorsOnly: true
+    checkstyle: logs/jslint-dist.xml
+
+test:
+  src:
+    - grunt.js
+    - test/**/*.jstd
+  directives:
+    browser: true
+    unparam: true
+    predef:
+      - $
+      - jQuery
+      - Modernizr
+      - amplify
+      - travi
+
+      - testCase
+      - sinon
+      - assert
+      - refute
+  options:
+    errorsOnly: true
+    checkstyle: logs/jslint-test.xml
